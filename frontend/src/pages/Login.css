@@ -1,0 +1,134 @@
+/* Overall layout */
+.login-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal parts */
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    /* Full viewport width */
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text by default */
+}
+
+/* Left grid: Image section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+    /* Black background for consistency */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire section */
+    filter: grayscale(20%) brightness(90%);
+    /* Slightly muted for better contrast */
+}
+
+/* Right grid: Login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    /* Black background */
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #333;
+    /* Dark gray form background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    /* Golden yellow */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ffd700;
+    /* Yellow border */
+    border-radius: 4px;
+    background-color: #222;
+    /* Dark gray background */
+    color: #fff;
+    /* White text */
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #ffc107;
+    /* Slightly brighter yellow on focus */
+    box-shadow: 0 0 5px #ffc107;
+    /* Subtle glow effect */
+}
+
+.error-message {
+    color: #ff6b6b;
+    /* Red for errors */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ffd700;
+    /* Golden yellow */
+    color: #000;
+    /* Black text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ffc107;
+    /* Brighter yellow on hover */
+}
+
+/* Signup link */
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ffd700;
+    /* Yellow text */
+}
+
+.signup-link a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
