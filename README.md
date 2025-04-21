@@ -11,26 +11,16 @@ MunchMap is a full-stack web application that combines a React frontend with a D
 ### Frontend Setup
 
 ```bash
-# Navigate to the frontend directory
-cd munchmap/munchmap/frontend
-
-# Install dependencies
+cd munchmap/frontend
 npm i
-
-# Start the development server
 npm run dev
 ```
 
 ### Backend Setup
 
 ```bash
-# Navigate to the backend directory
-cd munchmap/munchmap/backend
-
-# Activate virtual environment
+cd munchmap/backend
 venv\Scripts\activate
-
-# Run the Django server
 python manage.py runserver
 ```
 
