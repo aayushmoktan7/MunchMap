@@ -4,7 +4,7 @@ A restaurant recommendation web app
 Setup frontend:
 
 cd munchmap/munchmap/frontend  
-npm i
+npm i\n
 npm run dev
 
 Setup backend:
